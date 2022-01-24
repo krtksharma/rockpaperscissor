@@ -218,8 +218,7 @@ function Game() {
     
     let select = opt;
     const random = Math.floor(Math.random() * symbols.length);
-    noOfGame <5 && (alert(`Computer Choose = ${symbols[random]}  
-    ${user} Choose = ${select}`));
+    noOfGame <5 && (alert(`${user} Choose : ${select}\nComputer Choose : ${symbols[random]}`));
     game(select,random);
     
     
