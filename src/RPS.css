@@ -1,0 +1,48 @@
+#rock{
+   
+   padding: 10px;
+   display: flex;
+    justify-content: center;
+    width: 150px;
+    margin-top: 10px;
+    
+
+}
+
+#paper{
+    
+    padding: 10px;
+    display: flex;
+     justify-content: center;
+     width: 150px;
+     margin-top: 10px;
+ }
+ #scissor{
+
+    padding: 10px;
+    display: flex;
+     justify-content: center;
+     width: 150px;
+     margin-top: 10px;
+ 
+ }
+ /* #score{
+    border: 2px black solid;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    margin-top: 10px;
+ }
+ #wiin{
+    border: 2px black solid;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    margin-top: 10px;
+ } */
