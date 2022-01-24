@@ -8,14 +8,14 @@ const GameModule = (props) => {
   
   return (
   <>
-  <div id="rock" onClick={() => props.handleClick('Rock')}>
+  <div className='lgo' onClick={() => props.handleClick('Rock')}>
         
         <Logo src='./images/rock.png' alt=''></Logo>
   </div>
-  <div id="paper" onClick={() => props.handleClick("Paper")}>
+  <div className='lgo' onClick={() => props.handleClick("Paper")}>
         <Logo src='./images/paper.png' alt=''></Logo>
   </div>
-  <div id="scissor" onClick={() => props.handleClick("Scissors")}>
+  <div className='lgo' onClick={() => props.handleClick("Scissors")}>
         <Logo src='./images/scissors.png' alt=''></Logo>
   </div>       
   <Score>
@@ -35,42 +35,41 @@ const GameModule = (props) => {
 
 const Container = styled.div`
 margin: auto;
+border-radius: 60%;
 align-items: center;
 box-shadow: 0 3px 6px 0 #555;
 padding: 20px 10px;
 border-radius: 4px;
 width: 500px;
-height:460px;
+height:400px;
 background: white;
 font-family:Montserrat;
 position:relative;
+@media (max-width: 1000px){
+  width: 350px;
+  height:350px;
+}
 
 `;
 
 const Score = styled.div`
-    border: 0px black solid;  
+    border: 2px black solid;  
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 150px;   
+    width: 150px;
+    font-size:18px;   
     margin-top: 10px;
     position:absolute;
-    top: 20px;
+    top: 50px;
     right: 50px;
-
-`;
-const Slct = styled.div`
-    border: 0px black solid;  
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 150px;   
-    margin-top: 200px;
-    position:absolute;
-    top: 20px;
-    right: 50px;
+    @media (max-width: 1000px){
+      width: 100px; 
+      top: 50px;
+      right: 30px;
+      font-size:15px;  
+    }
 
 `;
 const Logo = styled.img`
@@ -88,6 +87,10 @@ font-size:25px;
 font-weight:bold;
 margin:150px 20px 20px 150px;
 color:black;
+@media (max-width: 1000px){
+  font-size:22px;
+  margin:110px 20px 20px 90px;
+}
 `;
 const Searchbox = styled.form`
 display:flex;
@@ -96,12 +99,18 @@ width:250px;
 margin:20px auto;
 border: solid black 1px;
 border-radius:2px;
+@media (max-width: 1000px){
+       width:200px;
+    }
 & input{
     padding:10px;
     font-size:18px;
     border:none;
     outline:none;
     ${'' /* font-weight:bold; */}
+    @media (max-width: 1000px){
+       font-size:15px;
+    }
     
 }
 & button{

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { useNavigate} from 'react-router-dom';
 import Button from '@mui/material/Button';
 import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
+import './App.css';
 
 const Container = styled.div`
 display: flex;
@@ -24,7 +25,7 @@ img{
 `;
 const AppLabel = styled.span`
 font-size:25px;
-font-family: Georgia, serif;
+font-family: 'Source Sans Pro', sans-serif;
 ${'' /* font-weight:bold; */}
 color:black;
 `;
