@@ -68,7 +68,7 @@ const Score = styled.div`
       width: 100px; 
       top: 50px;
       right: 30px;
-      font-size:15px;  
+      font-size:12px;  
     }
 
 `;
